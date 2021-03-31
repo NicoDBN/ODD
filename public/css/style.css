@@ -1,0 +1,101 @@
+ul
+{
+display: flex;
+justify-content: center;
+background-color: blue;
+border : 1px solid blue;
+border-radius: 60px;
+}
+li 
+{
+list-style: none;
+justify-content: center;
+margin-left: 10px;
+padding: 10px;
+}
+
+a
+{
+text-decoration: none;   
+color: white;
+}
+
+a:hover{
+    opacity: 80%;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.banniere{
+    background-image: url('../img/banniere.jpg');
+    height: 300px;
+    object-position: 50% 50%;
+}
+
+  /*Neon*/
+  li>p {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0 20px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  li>p:nth-child(1) a {
+    color: #FF9900;
+    font-family: Audiowide;
+  }
+  
+  li>p :nth-child(1) a:hover {
+    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+    animation: neon5 1.5s ease-in-out infinite alternate;
+  }
+
+  
+  li>p a:hover {
+    color: #ffffff;
+  }
+  /*glow for webkit*/
+  
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+  }
+
+  /*glow*/
+  
+
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+  }
+
+  /*REEEEEEEEEEESPONSIVE*/
+  
+  @media (max-width: 650px) {
+    #container {
+      width: 100%;
+    }
+    p {
+      font-size: 3.5em;
+    }
+  }
